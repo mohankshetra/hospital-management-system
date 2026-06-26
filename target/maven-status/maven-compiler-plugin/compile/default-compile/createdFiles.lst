@@ -1,0 +1,10 @@
+Controller\AddPatient.class
+Controller\UserLogin.class
+Controller\AdminLogin.class
+Controller\UserRegister.class
+Controller\AddWorker.class
+Controller\updatePatient.class
+Controller\AdminRegister.class
+Database\DatabaseConnection.class
+Controller\AddDoctor.class
+Controller\AddRecp.class
