@@ -46,15 +46,15 @@ public class AdminRegister extends HttpServlet {
                 pw.println("alert('Registerd Successfully..!');");
                 pw.println("window.location.href = \"adminLogin.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("adminLogin.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("adminLogin.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Username or Password is Incorrect..!');");
                 pw.println("window.location.href = \"adminRegister.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("adminRegister.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("adminRegister.jsp");
+                // rd.forward(request, response);
             }
 
         } catch (Exception e) {

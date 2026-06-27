@@ -69,15 +69,15 @@ public class AddPatient extends HttpServlet {
                 pw.println("alert('Login Successfully..!');");
                 pw.println("window.location.href = \"UserHome.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("UserHome.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("UserHome.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Incorrect Data..!');");
                 pw.println("window.location.href = \"addpatient.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("addpatient.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("addpatient.jsp");
+                // rd.forward(request, response);
             }
         } catch (SQLException ex) {
             Logger.getLogger(AddPatient.class.getName()).log(Level.SEVERE, null, ex);

@@ -89,7 +89,7 @@
                     <input type="password" id="password"
                            class="fadeIn third" name="repassword" placeholder="Enter Password Again"> 
                     <input
-                        type="submit" class="fadeIn fourth" value="Register">
+                        type="submit" class="fadeIn fourth" value="login" placeholder="Register">
                 </form>
 
                 <!-- Remind Passowrd -->

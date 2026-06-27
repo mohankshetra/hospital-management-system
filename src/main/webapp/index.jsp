@@ -81,7 +81,7 @@
 
                 <!-- Remind Passowrd -->
                 <div id="formFooter">
-                    <a class="underlineHover" href="userRegister.jsp">Create Account</a>
+                    <a class="underlineHover" href="userRegister.jsp">Sign Up</a>
                 </div>
 
             </div>

@@ -74,15 +74,15 @@ public class AddDoctor extends HttpServlet {
                 pw.println("alert('Data Add Successfully..!');");
                 pw.println("window.location.href = \"AdminHome.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Failed !!!!,try Again Later!');");
                 pw.println("window.location.href = \"addDoctor.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("addDoctor.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("addDoctor.jsp");
+                // rd.forward(request, response);
             }
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(AddPatient.class.getName()).log(Level.SEVERE, null, ex);

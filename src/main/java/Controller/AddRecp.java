@@ -58,15 +58,15 @@ public class AddRecp extends HttpServlet {
                 pw.println("alert('Add Successfully..!');");
                 pw.println("window.location.href = \"AdminHome.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Incorrect Data...!');");
                 pw.println("window.location.href = \"AddRecp.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("AddRecp.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("AddRecp.jsp");
+                // rd.forward(request, response);
             }
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(AddPatient.class.getName()).log(Level.SEVERE, null, ex);

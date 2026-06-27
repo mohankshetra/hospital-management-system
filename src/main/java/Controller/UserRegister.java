@@ -38,27 +38,30 @@ public class UserRegister extends HttpServlet {
             pass = request.getParameter("password");
             String repassp = request.getParameter("repassword");
 
-            PreparedStatement pst = con.prepareStatement("insert into login values(?,?)");
+            PreparedStatement pst = con.prepareStatement("insert into login(user,pass)values(?,?)");
             pst.setString(1, user);
             pst.setString(2, pass);
             i = pst.executeUpdate();
+            System.out.println("row inseted="+i);
             if (i > 0) {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Register Successfully..!');");
                 pw.println("window.location.href = \"index.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Register Failed');");
                 pw.println("window.location.href = \"userRegister.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("userRegister.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("userRegister.jsp");
+                // rd.forward(request, response);
             }
 
         } catch (Exception e) {
+            e.printStackTrace();
+            response.sendRedirect("userRegister.jsp");
 
         }
 

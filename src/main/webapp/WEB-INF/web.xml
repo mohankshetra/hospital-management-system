@@ -6,14 +6,8 @@
          version="6.0">
 
     <display-name>HospitalManagementSystem</display-name>
-       <servlet-mapping>
-       <servlet-name>AdminLogin</servlet-name>
-       <url-pattern>/AdminLogin</url-pattern>
-    </servlet-mapping>
-    <servlet>
-       <servlet-name>AdminLogin</servlet-name>
-       <servlet-class>your.package.AdminLogin</servlet-class>
-    </servlet>
+       
+    
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

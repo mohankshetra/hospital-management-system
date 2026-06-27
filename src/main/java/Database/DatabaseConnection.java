@@ -23,12 +23,14 @@ public class DatabaseConnection {
         String dbDriver = "com.mysql.cj.jdbc.Driver"; 
         String dbURL = "jdbc:mysql://localhost:3306/"; 
         // Database name to access 
-        String dbName = "lLocal MYSQL"; 
+        String dbName = "hospital"; 
         String dbUsername = "root"; 
         String dbPassword = "Salimatty@1234"; 
+        
   
         Class.forName(dbDriver); 
         Connection con = DriverManager.getConnection(dbURL+dbName,dbUsername,dbPassword); 
+        System.out.println("Database Connected Successfully");
         return con; 
     } 
 } 

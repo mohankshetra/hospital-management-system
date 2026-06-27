@@ -48,15 +48,15 @@ public class AdminLogin extends HttpServlet {
                 pw.println("alert('Login Successfully..!');");
                 pw.println("window.location.href = \"AdminHome.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Username or Password is Incorrect..!');");
                 pw.println("window.location.href = \"index.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-                //rd.include(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+                // rd.include(request, response);
             }
         } catch (Exception e) {
 

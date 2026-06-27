@@ -6,6 +6,8 @@
          version="6.0">
 
     <display-name>HospitalManagementSystem</display-name>
+       
+    
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

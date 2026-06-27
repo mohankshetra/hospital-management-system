@@ -74,7 +74,7 @@
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <!-- Tabs Titles -->
-                <h2>User Login</h2>
+                <h2>New Registration</h2>
                 <!-- Icon -->
                 <div class="fadeIn first">
 
@@ -89,7 +89,7 @@
                     <input type="password" id="password"
                            class="fadeIn third" name="repassword" placeholder="Enter Password Again"> 
                     <input
-                        type="submit" class="fadeIn fourth" value="Log In">
+                        type="submit" class="fadeIn fourth" value="login" placeholder="Register">
                 </form>
 
                 <!-- Remind Passowrd -->

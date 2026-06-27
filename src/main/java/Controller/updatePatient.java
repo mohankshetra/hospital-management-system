@@ -54,15 +54,15 @@ public class updatePatient extends HttpServlet {
                 pw.println("alert('Update Successfully..!');");
                 pw.println("window.location.href = \"AdminHome.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("AdminHome.jsp");
+                // rd.forward(request, response);
             } else {
                 pw.println("<script type=\"text/javascript\">");
                 pw.println("alert('Failed..! Try Again Later...');");
                 pw.println("window.location.href = \"updatePatient.jsp\";");
                 pw.println("</script>");
-                //RequestDispatcher rd = request.getRequestDispatcher("updatePatient.jsp");
-                //rd.forward(request, response);
+                // RequestDispatcher rd = request.getRequestDispatcher("updatePatient.jsp");
+                // rd.forward(request, response);
             }
             con.close();
         } catch (Exception e) {
